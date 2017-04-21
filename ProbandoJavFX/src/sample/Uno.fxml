@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Uno">
+   <children>
+      <Pane prefHeight="600.0" prefWidth="400.0">
+         <children>
+            <Button fx:id="btn_enviar" layoutX="79.0" layoutY="535.0" mnemonicParsing="false" onAction="#enviar" prefHeight="27.0" prefWidth="77.0" text="Agregar" />
+            <Label layoutX="16.0" layoutY="86.0" prefHeight="17.0" prefWidth="116.0" text=" Nombre Completo" />
+            <Label layoutX="247.0" layoutY="86.0" prefHeight="17.0" prefWidth="77.0" text="Cedula" />
+            <TextField fx:id="txtusername" layoutX="16.0" layoutY="113.0" />
+            <Label layoutX="97.0" layoutY="21.0" prefHeight="28.0" prefWidth="186.0" text="Registro Clinico" textAlignment="CENTER">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="160.0" prefHeight="17.0" prefWidth="149.0" text="Fecha de nacimiento" />
+            <TextField fx:id="txtfecha" layoutX="16.0" layoutY="187.0" />
+            <Label layoutX="241.0" layoutY="160.0" prefHeight="17.0" prefWidth="116.0" text="Celular" />
+            <TextField fx:id="txtcelular" layoutX="202.0" layoutY="187.0" />
+            <Label layoutX="150.0" layoutY="231.0" prefHeight="17.0" prefWidth="132.0" text="Historial del paciente" textAlignment="CENTER">
+               <font>
+                  <Font size="10.0" />
+               </font></Label>
+            <Label layoutX="16.0" layoutY="248.0" prefHeight="17.0" prefWidth="116.0" text="Ultima cita" />
+            <TextField fx:id="txtcita" layoutX="16.0" layoutY="275.0" />
+            <TextField fx:id="txtpoliza" layoutX="199.0" layoutY="275.0" />
+            <Label layoutX="254.0" layoutY="248.0" prefHeight="17.0" prefWidth="116.0" text="Numero de Poliza" />
+            <TextField fx:id="txtdoctor" layoutX="16.0" layoutY="353.0" />
+            <Label layoutX="16.0" layoutY="336.0" prefHeight="17.0" prefWidth="116.0" text="Doctores" />
+            <TextField fx:id="txtenfermedad" layoutX="206.0" layoutY="353.0" />
+            <Label layoutX="254.0" layoutY="336.0" prefHeight="17.0" prefWidth="116.0" text="Enfermedad" />
+            <TextField fx:id="txthistorial" layoutX="117.0" layoutY="423.0" prefHeight="71.0" prefWidth="167.0" />
+            <Label layoutX="183.0" layoutY="406.0" prefHeight="17.0" prefWidth="66.0" text="Historial" />
+            <Button fx:id="btn_limpiar" layoutX="258.0" layoutY="535.0" mnemonicParsing="false" onAction="#limpiar" text="Limpiar" />
+            <Label layoutX="152.0" layoutY="49.0" prefHeight="28.0" prefWidth="97.0" text="Agregar usuario" textAlignment="CENTER">
+               <font>
+                  <Font name="System Italic" size="10.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtcedula" layoutX="201.0" layoutY="113.0" />
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
